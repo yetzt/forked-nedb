@@ -1,10 +1,7 @@
 {
-  "name": "nedb",
+  "name": "@yetzt/nedb",
   "version": "1.8.0",
-  "author": {
-    "name": "Louis Chatriot",
-    "email": "louis.chatriot@gmail.com"
-  },
+  "author": "Louis Chatriot <louis.chatriot@gmail.com>",
   "contributors": [
     "Louis Chatriot"
   ],
@@ -14,10 +11,10 @@
     "datastore",
     "embedded"
   ],
-  "homepage": "https://github.com/louischatriot/nedb",
+  "homepage": "https://github.com/yetzt/nedb",
   "repository": {
     "type": "git",
-    "url": "git@github.com:louischatriot/nedb.git"
+    "url": "git+ssh://git@github.com/yetzt/nedb.git"
   },
   "dependencies": {
     "async": "^3.2.0",
@@ -35,12 +32,19 @@
     "sinon": "^10.0.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec --timeout 10000"
+    "test": "mocha --reporter spec --timeout 1000"
   },
   "main": "index",
   "browser": {
     "./lib/customUtils.js": "./browser-version/browser-specific/lib/customUtils.js",
     "./lib/storage.js": "./browser-version/browser-specific/lib/storage.js"
   },
-  "license": "SEE LICENSE IN LICENSE"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yetzt/nedb/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
 }
